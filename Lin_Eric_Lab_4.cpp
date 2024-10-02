@@ -7,16 +7,21 @@
 
 using namespace std;                //Crucial Too
 
-int main() {                        //Start of Function
+int main() {                                                                                //Start of Function
     string fruitN;
     double gramSug;
+    
+    //Questions to ask user for data purposes
     cout << "What is your fruit: " << endl;   
-    cin >> fruitN;
+    cin >> fruitN;                                                                          //Name of Fruit
     cout << "How many grams of sugar does one cup of " << fruitN << " contain: " << endl;   
-    cin >> gramSug;
+    cin >> gramSug;                                                                         //Unit of Sugar 
 
+    //Following is for looping
     while (true) 
     { 
+
+    //If else statements
     if (gramSug < 10) 
     { 
     cout << fruitN << " is a LOW SUGAR FRUIT." << endl; 
@@ -30,5 +35,6 @@ int main() {                        //Start of Function
     cout << fruitN << " is a HIGH SUGAR FRUIT." << endl;
     }
     }
+    //End of Code
     return 0;
 }
